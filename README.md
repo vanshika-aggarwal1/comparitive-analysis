@@ -68,14 +68,3 @@ jupyter notebook
 
 Each model notebook saves its evaluation metrics and prediction plots to the `results/` folder.
 
-## Summary of Results
-
-| Model | MAE | MSE | RMSE | R² |
-|---|---|---|---|---|
-| Persistence | 0.004351 | 0.000149 | 0.012191 | 0.034172 |
-| ARIMA (5,1,0) | 0.006894 | 0.000195 | 0.013947 | −0.264187 |
-| **XGBoost** | **0.002692** | **0.000057** | **0.007531** | **0.631455** |
-| LSTM | 0.005052 | 0.000104 | 0.010188 | 0.325412 |
-
-XGBoost achieved the best overall performance across all metrics, while ARIMA performed worst, producing a negative R² value — indicating it underperformed even a naive mean-based forecast on this dataset.
-
